@@ -1,28 +1,42 @@
-# Shinobi JLPT Academy
+# Shinobi JLPT Academy — PWA Deploy
 
-Offline JLPT N2/N1 grammar, vocabulary and dokkai trainer prepared as a PWA.
+Это готовая папка для запуска сайта на компьютере и телефоне.
 
-## Files
-- index.html: main app
-- manifest.json: PWA manifest
-- service-worker.js: offline cache
-- icons/: app icons
-- shinobi_images/: local images
+## Файлы
+- `index.html` — главный сайт.
+- `shinobi_jlpt_academy.html` — копия главного файла, если нужно открыть по старому имени.
+- `shinobi_images/` — локальные картинки.
+- `manifest.json` — делает сайт устанавливаемым как приложение.
+- `service-worker.js` — офлайн-кэш после первой загрузки.
+- `icons/` — иконки приложения.
 
-## Local run
+## Как запустить локально
+В этой папке:
 
 ```bash
 python -m http.server 8787
 ```
 
-Open http://127.0.0.1:8787/
+Потом открыть:
 
-## GitHub Pages
-Use Settings > Pages > Deploy from branch > main > root.
+```text
+http://127.0.0.1:8787/
+```
 
-## Install
-- iPhone: Safari > Share > Add to Home Screen
-- Android: Chrome > Add to Home Screen
-- PC: Chrome or Edge > Install app
+## Как залить на GitHub Pages
+1. Создай репозиторий, например `shinobi-jlpt-academy`.
+2. Загрузи все файлы из этой папки в корень репозитория.
+3. Settings → Pages → Deploy from branch → main → root.
+4. Открой ссылку GitHub Pages.
 
-Progress is stored locally in browser localStorage, so desktop and phone progress are separate until cloud sync is added.
+## Как установить на iPhone
+Safari → открыть сайт → Share/Поделиться → Add to Home Screen/На экран «Домой».
+
+## Как установить на Android
+Chrome → открыть сайт → ⋮ → Add to Home screen/Добавить на главный экран.
+
+## Как установить на PC
+Chrome/Edge → открыть сайт → Install app / Установить приложение.
+
+## Важное ограничение
+Прогресс сохраняется в `localStorage`, то есть отдельно на каждом устройстве. Между телефоном и компьютером автоматической синхронизации пока нет. Для общего прогресса нужен cloud sync через Firebase/Supabase или ручной экспорт/импорт.

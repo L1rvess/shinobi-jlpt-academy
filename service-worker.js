@@ -1,8 +1,27 @@
 const CACHE_NAME = 'shinobi-jlpt-academy-pwa-60353c678cfe';
 const APP_SHELL = [
-  './',
-  './index.html',
-  './manifest.json'
+  "./",
+  "./index.html",
+  "./manifest.json",
+  "./shinobi_images/images%20(1).jfif",
+  "./shinobi_images/images%20(2).jfif",
+  "./shinobi_images/images%20(3).jfif",
+  "./shinobi_images/images%20(4).jfif",
+  "./shinobi_images/images%20(5).jfif",
+  "./shinobi_images/images%20(6).jfif",
+  "./shinobi_images/images%20(7).jfif",
+  "./shinobi_images/images%20(8).jfif",
+  "./shinobi_images/images.jfif",
+  "./icons/apple-touch-icon.png",
+  "./icons/icon-128.png",
+  "./icons/icon-144.png",
+  "./icons/icon-152.png",
+  "./icons/icon-180.png",
+  "./icons/icon-192.png",
+  "./icons/icon-384.png",
+  "./icons/icon-512.png",
+  "./icons/icon-72.png",
+  "./icons/icon-96.png"
 ];
 
 self.addEventListener('install', event => {
